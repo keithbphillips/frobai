@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frobai"
+version = "0.1.0"
+description = "A Z-machine interpreter with a local-LLM assisted parser"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+frobai = "frobai.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["frobai*"]
